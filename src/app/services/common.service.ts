@@ -4,13 +4,12 @@ import { Injectable, signal } from '@angular/core';
   providedIn: 'root',
 })
 export class CommonService {
-  themeSignal = signal<string>('dark');
+  theme = localStorage.getItem('theme') || 'dark';
 
-  setTheme(theme: string) {
-    this.themeSignal.set(theme);
-  }
+  themeSignal = signal<string>(this.theme);
 
   updateTheme() {
     this.themeSignal.update((value) => (value === 'dark' ? 'light' : 'dark'));
+    localStorage.setItem('theme', this.themeSignal());
   }
 }
