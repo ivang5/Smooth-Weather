@@ -5,7 +5,7 @@ import { Injectable, signal } from '@angular/core';
 })
 export class CommonService {
   theme = localStorage.getItem('theme') || 'dark';
-  lang = localStorage.getItem('lang') || 'en';
+  lang = localStorage.getItem('lang') || 'GB';
 
   themeSignal = signal<string>(this.theme);
   langSignal = signal<string>(this.lang);
