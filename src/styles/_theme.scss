@@ -27,6 +27,33 @@
     color: $light-main;
     transition: color 0.2s;
   }
+
+  .p-dropdown-items {
+    background: $dark-secondary-1;
+    .p-dropdown-item {
+      background: $dark-secondary-1;
+      color: $light-main;
+    }
+  }
+
+  .p-dropdown-panel .p-dropdown-items .p-dropdown-item.p-highlight {
+    background: $dark-secondary-2;
+    color: $light-main;
+  }
+
+  .p-dropdown-panel
+    .p-dropdown-items
+    .p-dropdown-item:not(.p-highlight):not(.p-disabled).p-focus {
+    background: $dark-secondary-3;
+    color: $light-main;
+  }
+
+  .p-dropdown-panel
+    .p-dropdown-items
+    .p-dropdown-item:not(.p-highlight):not(.p-disabled):hover {
+    background: $dark-secondary-3;
+    color: $light-main;
+  }
 }
 
 .light {
@@ -56,6 +83,23 @@
   .p-dropdown-label > div > div {
     color: black;
     transition: color 0.2s;
+  }
+
+  .p-dropdown-panel .p-dropdown-items .p-dropdown-item.p-highlight {
+    background: $light-secondary-2;
+    color: #0e0e0e;
+  }
+
+  .p-dropdown-panel
+    .p-dropdown-items
+    .p-dropdown-item:not(.p-highlight):not(.p-disabled).p-focus {
+    background: $light-secondary-1;
+  }
+
+  .p-dropdown-panel
+    .p-dropdown-items
+    .p-dropdown-item:not(.p-highlight):not(.p-disabled):hover {
+    background: $light-secondary-1;
   }
 
   .content-container {

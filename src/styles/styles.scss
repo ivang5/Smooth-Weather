@@ -21,6 +21,20 @@
   box-shadow: none;
 }
 
+.p-dropdown-items {
+  .p-dropdown-item {
+    padding: 0.75rem 1.25rem 0.75rem 1rem;
+
+    div {
+      display: flex;
+
+      img {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
 .p-dropdown-label {
   padding: 10px 8px;
 
