@@ -1,0 +1,64 @@
+.dark {
+  background-color: $dark-main;
+  transition: background-color 0.2s;
+
+  p,
+  a,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #ffffff;
+  }
+
+  *:focus-visible {
+    border-radius: 3px;
+    outline: 2px solid $dark-outline;
+  }
+
+  .p-dropdown {
+    background-color: $dark-main;
+    outline: 2px solid $dark-outline;
+  }
+
+  .p-dropdown-label > div > div {
+    color: $light-main;
+    transition: color 0.2s;
+  }
+}
+
+.light {
+  background-color: $light-main;
+  transition: background-color 0.2s;
+
+  p,
+  a,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #0e0f0f;
+  }
+
+  *:focus-visible {
+    border-radius: 3px;
+    outline: 2px solid $light-outline;
+  }
+
+  .p-dropdown {
+    outline: 2px solid $light-outline;
+  }
+
+  .p-dropdown-label > div > div {
+    color: black;
+    transition: color 0.2s;
+  }
+
+  .content-container {
+    box-shadow: 0 4px 30px $light-shadow;
+  }
+}
