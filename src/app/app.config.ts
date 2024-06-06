@@ -27,24 +27,6 @@ export const appConfig: ApplicationConfig = {
         },
       })
     ),
-    // HttpClientModule,
     HttpClient,
   ],
 };
-
-// export const appConfig: ApplicationConfig = {
-//   providers: [
-//     provideRouter(routes),
-//     HttpClientModule,
-//     importProvidersFrom(
-//       TranslateModule.forRoot({
-//         loader: {
-//           provide: TranslateLoader,
-//           useFactory: HttpLoaderFactory,
-//           deps: [HttpClient],
-//         },
-//       })
-//     ),
-//     HttpClient,
-//   ],
-// };

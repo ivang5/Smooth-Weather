@@ -18,9 +18,7 @@ export class HeaderComponent {
 
   selectedCountry: string = this.commonService.langSignal();
 
-  constructor(private translateService: TranslateService) {
-    console.log(this.selectedCountry);
-  }
+  constructor(private translateService: TranslateService) {}
 
   toggleTheme() {
     this.commonService.updateTheme();

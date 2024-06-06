@@ -18,7 +18,7 @@ export class AppComponent {
   commonService: CommonService = inject(CommonService);
 
   constructor(private translateService: TranslateService) {
-    this.translateService.setDefaultLang('en');
+    this.translateService.setDefaultLang('GB');
     this.translateService.use(this.commonService.langSignal());
   }
 }
